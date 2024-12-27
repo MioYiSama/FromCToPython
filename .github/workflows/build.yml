@@ -9,14 +9,15 @@ jobs:
   build:
     name: 构建PDF
     runs-on: ubuntu-latest
+    env:
+      OUTPUT: FromCToPython.pdf
 
     steps:
       - uses: actions/checkout@v4
       - uses: typst-community/setup-typst@v3
 
-      - run: typst compile main.typ main.pdf --font-path fonts
+      - run: typst compile main.typ $OUTPUT --font-path fonts
 
       - uses: actions/upload-artifact@v4
         with:
-          name: FromCToPython.pdf
-          path: main.pdf
+          path: $OUTPUT
