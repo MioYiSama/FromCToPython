@@ -1,7 +1,11 @@
+注：
+- *标准库*，指Python自带的库
+- 篇幅限制，只放文档链接
+
 #table(
   align: center,
-  columns: (15%, 25%, 60%),
-  table.header([*名称*], [*作用*], [*文档链接*]),
+  columns: (13%, 25%, 62%),
+  table.header([*名称*], [*作用*], [*文档*]),
   [os], [操作系统接口], [ #link("https://docs.python.org/zh-cn/3.11/library/os.html") ],
   [sys], [解释器接口], [ #link("https://docs.python.org/zh-cn/3.11/library/sys.html") ],
   [json], [处理 JSON 数据], [ #link("https://docs.python.org/zh-cn/3.11/library/json.html") ],

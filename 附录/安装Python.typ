@@ -6,7 +6,7 @@
 
 #image("../图片/python-file.png")
 
-3. 勾选下方的#quote[Add python.exe to PATH]
+3. 勾选下方的#quote[Add python.exe to PATH]，点击#quote[Install Now]
 
 #image("../图片/python-setup.png", width: 50%)
 

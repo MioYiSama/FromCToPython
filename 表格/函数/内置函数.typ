@@ -265,7 +265,7 @@
     )
     ```
   ],
-  [打开文件#linebreak() 详情见#link(<a>)[#quote[文件读写]]],
+  [打开文件#linebreak() （详情见#link(<a>)[#quote[文件读写]]）],
   [
     ```py
     open('1.txt', 'r', encoding='utf-8')

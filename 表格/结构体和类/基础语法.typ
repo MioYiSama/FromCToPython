@@ -44,7 +44,7 @@
   [创建变量],
   [
     ```c
-    struct Point x = {
+    struct Point p = {
       .x = 1,
       .y = 2
     };
@@ -52,19 +52,19 @@
   ],
   [
     ```py
-    x = Point(1, 2)
+    p = Point(1, 2)
     ```
   ],
 
   [使用方法],
   [
     ```c
-    Point_add(&x);
+    Point_add(&p);
     ```
   ],
   [
     ```py
-    x.add()
+    p.add()
     ```
   ],
 )

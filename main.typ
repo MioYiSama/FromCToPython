@@ -69,11 +69,11 @@
 
 #include "表格/变量/特殊字面量.typ"
 
-#pagebreak()
-
 == 变量类型转换
 
 #include "表格/变量/变量类型转换.typ"
+
+#pagebreak()
 
 == 变量的声明、赋值和使用
 
@@ -143,13 +143,11 @@
 
 #pagebreak()
 
-== 文件读写<io>
-
-#include "表格/库/文件读写.typ"
-
-#pagebreak()
-
 = 结构体与类
+
+== 方法
+
+#include "表格/结构体和类/方法.typ"
 
 == 区别
 
@@ -159,19 +157,29 @@
 
 #include "表格/结构体和类/基础语法.typ"
 
+== 变量与内存
+
+#include "表格/结构体和类/变量与内存.typ"
+
 #pagebreak()
 
-== 字符串的方法
+== 常用方法
+
+=== 序列的通用方法
+
+=== 字符串的方法
 
 #include "表格/结构体和类/字符串的方法.typ"
 
-#pagebreak()
+=== 列表与元组
 
-== 列表与元组
+=== 集合
 
-== 集合
+=== 字典
 
-== 字典
+=== 文件读写<io>
+
+#include "表格/库/文件读写.typ"
 
 #pagebreak()
 
@@ -183,9 +191,9 @@ Python中的库是通过#quote[*模块*]组织的，一个Python文件就可以�
 
 #include "表格/库/导入.typ"
 
-== 标准库
+== 常用标准库
 
-#include "表格/库/标准库.typ"
+#include "表格/库/常用标准库.typ"
 
 #pagebreak()
 
@@ -205,6 +213,10 @@ except:
 finally:
   pass
 ```
+
+== `with`
+
+#include "表格/异常与with/with.typ"
 
 #pagebreak()
 
