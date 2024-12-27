@@ -4,7 +4,8 @@
   align: (x, y) => (
     (
       if x == 0 or x == 1 or y == 0 { center } else { left }
-    ) + horizon
+    )
+      + horizon
   ),
   columns: (20%, 20%, 40%, 20%),
   table.header([*函数*], [*功能*], [*举例*], [*结果*]),
@@ -53,7 +54,6 @@
     print(1, 2, 3)
     print(1, 2, 3, sep=',')
     print(1, 2, 3, end='$')
-    print(666)
     ```
   ],
   [
@@ -61,7 +61,7 @@
     1
     1 2 3
     1,2,3
-    1 2 3$666
+    1 2 3
     ```
   ],
 
@@ -111,7 +111,9 @@
     exec(x)
     ```
   ],
-  [计算表达式#linebreak() 执行语句],
+  [
+    计算表达式#linebreak()执行语句
+  ],
   [
     ```py
     eval('1 + 2')
@@ -149,7 +151,7 @@
     isinstance(x, t)
     ```
   ],
-  [判断x的类型是否为t],
+  [判断x的类型#linebreak()是否为t],
   [
     ```py
     def f(x):
@@ -174,7 +176,7 @@
     len(x)
     ```
   ],
-  [获取序列（包括字符串）长度],
+  [获取序列或字符串长度],
   [
     ```py
     len('Hello')
@@ -233,11 +235,30 @@
 
   [
     ```py
+    type(x)
+    ```
+  ],
+  [获取x的类型],
+  [
+    ```py
+    type(1.23)
+    ```
+  ],
+  [
+    ```py
+    float
+    ```
+  ],
+
+  [
+    ```py
     sorted(
       # 序列
       iterable,
       # 是否降序排序
-      reverse=False
+      reverse=False,
+      # 排序关键字
+      key=None
     )
     ```
   ],
@@ -245,11 +266,19 @@
   [
     ```py
     sorted([3, 1, 5, 2, 4])
+    sorted([3, 1, 5, 2, 4], reverse=True)
+
+    def f(x): return -x
+    sorted([3, 1, 5, 2, 4], key=f)
     ```
   ],
   [
     ```py
     [1, 2, 3, 4, 5]
+    [5, 4, 3, 2, 1]
+
+
+    [5, 4, 3, 2, 1]
     ```
   ],
 
@@ -259,13 +288,13 @@
       # 文件路径
       filename,
       # 打开模式
-      mode,
+      mode='r',
       # 编码
       encoding
     )
     ```
   ],
-  [打开文件#linebreak() （详情见#link(<a>)[#quote[文件读写]]）],
+  [打开文件#linebreak() （详情见#quote[#link(<file>)[文件读写]]）],
   [
     ```py
     open('1.txt', 'r', encoding='utf-8')

@@ -1,8 +1,8 @@
 #import "../lib.typ": None
 
 注：
-- Python的“除”的结果永远为浮点数
-- Python的“整除”的结果永远为整数（结果为只保留整数部分的商）
+- Python的“*除*”的结果永远为*浮点数*
+- Python的“*整除*”的结果永远为*整数*（结果为*保留整数部分*的商）
 
 #table(
   table.header([*运算符*], [*C*], [*Python*]),

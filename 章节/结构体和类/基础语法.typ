@@ -1,5 +1,9 @@
 #import "../lib.typ": None
 
+注：
+- Python的实例方法的第一个参数为实例自身，并通常起名为#quote[self]
+- Python的类的属性和Python的变量一样，都不需要声明，但需要先赋值后使用
+
 #table(
   table.header([*结构体与类*], [*C*], [*Python*]),
 
@@ -21,7 +25,7 @@
     ```
   ],
 
-  [创建方法 #footnote[C语言没有方法的概念。此处代码仅用作理解使用]],
+  [创建实例方法 #footnote[C语言没有方法的概念。此处代码仅用作理解使用]],
   [
     ```c
     int Point_add(struct Point* self) {

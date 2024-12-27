@@ -14,6 +14,6 @@
 
 #image("../图片/python-installing.png", width: 50%)
 
-5. 点击#quote[Close]完成安装（可选：点击#quote[#emoji.shield Disable path length limit]）#footnote[Windows默认限制了文件路径不能超过260个字符，该选项可以禁用这个限制，推荐点击]
+5. 点击#quote[Close]完成安装（可选项#footnote[Windows默认限制了文件路径不能超过260个字符，该选项可以禁用这个限制，推荐点击]：点击#quote[#emoji.shield Disable path length limit]）
 
 #image("../图片/python-finish.png", width: 50%)

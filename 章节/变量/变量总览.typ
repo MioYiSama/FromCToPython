@@ -1,7 +1,7 @@
 #import "../lib.typ": None
 
 注：
-- 虽然Python没有数组，但是Python有功能比数组更强大的各种序列（列表，元组，集合，字典）
+- 虽然Python没有*数组*，但是Python有功能比数组更强大的各种*序列*（列表，元组，集合，字典等）
 
 #table(
   columns: (20%, 34%, 34%, 12%),
@@ -63,7 +63,7 @@
   [#None],
   [#None],
 
-  [布尔 #footnote[并非C语言原生类型，且需要`#include <stdbool.h>`]],
+  [布尔 #footnote[并非C语言原生类型，需要`#include <stdbool.h>`]],
   [
     ```c
     bool x = true;
@@ -99,7 +99,7 @@
   [#None],
   [#None],
 
-  [（整数）区间 #footnote[C语言并没有区间，代码仅用作理解使用]],
+  [（整数）区间 #footnote[C语言并*没有*区间，相关代码仅用作*理解*使用]],
   [
     ```c
     for (int i = 0; i < 5; i += 1);
@@ -180,3 +180,5 @@
   ],
   [`NoneType`],
 )
+
+// TODO: 解释dict

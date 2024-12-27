@@ -15,10 +15,22 @@
     ```
   ],
 
+  [整数 转 浮点数],
+  [
+    ```c
+    (float)x
+    ```
+  ],
+  [
+    ```py
+    float(x)
+    ```
+  ],
+
   [整数 转 字符串 #footnote[C语言需要 `#include <stdio.h>`]],
   [
     ```c
-    char s[100];
+    char s[256];
     sprintf(s, "%d", x); // 十进制
     // 无法直接进行二进制转换
     sprintf(s, "%o", x); // 八进制

@@ -1,6 +1,6 @@
 注：
 - C语言的`for`只是`while`的变体
-- Python的`for`只能遍历一个序列
+- Python的`for`只能用于*遍历*一个*序列*
 
 #table(
   table.header([循环], [C], [Python]),
