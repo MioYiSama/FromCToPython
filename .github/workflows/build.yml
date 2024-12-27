@@ -13,10 +13,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: typst-community/setup-typst@v3
-      - uses: fontist/setup-fontist@v2
 
-      - run: fontist install "Noto Serif CJK"
-      - run: typst compile main.typ main.pdf --font-path ~/.fontist/fonts:font
+      - run: typst compile main.typ main.pdf --font-path fonts
 
       - uses: actions/upload-artifact@v4
         with:
