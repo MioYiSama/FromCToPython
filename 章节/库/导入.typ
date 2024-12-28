@@ -4,7 +4,8 @@
   align: (x, y) => (
     (
       if y == 0 or x > 2 { center } else { left }
-    ) + horizon
+    )
+      + horizon
   ),
   columns: (50%, 50%),
   table.header([*C*], [*Python*]),

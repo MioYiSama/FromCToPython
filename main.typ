@@ -170,8 +170,6 @@
 
 == 常用方法
 
-=== 序列的通用方法
-
 === 字符串的方法
 
 #include "章节/结构体和类/字符串的方法.typ"
@@ -182,19 +180,29 @@
 
 === 字典
 
-=== 文件读写<file>
+#pagebreak()
 
-#include "章节/库/文件读写.typ"
+=== 文件<file>
+
+#include "章节/结构体和类/文件.typ"
 
 #pagebreak()
 
 = 库
 
-Python中的库是通过#quote[*模块*]组织的，一个Python文件就可以是一个模块。
+Python中的库是通过#quote[*模块*]组织的。
+
+一个Python文件就可以是一个模块。
 
 == 导入
 
 #include "章节/库/导入.typ"
+
+== 举例
+
+#include "章节/库/举例.typ"
+
+#pagebreak()
 
 == 常用标准库
 
@@ -204,20 +212,19 @@ Python中的库是通过#quote[*模块*]组织的，一个Python文件就可以�
 
 = 异常与`with`
 
-注：#quote[异常]仅存在于Python中，不存在于C语言中
+== 异常的概念
+
+#include "章节/异常与with/异常的概念.typ"
 
 == 抛出异常
 
+#include "章节/异常与with/抛出异常.typ"
+
+#pagebreak()
+
 == 捕获异常
 
-```py
-try:
-  f()
-except:
-  pass
-finally:
-  pass
-```
+#include "章节/异常与with/抛出异常.typ"
 
 == `with`
 

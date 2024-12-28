@@ -38,7 +38,8 @@
   align: (x, y) => (
     (
       if x == 0 or x == 1 or y == 0 { center } else { left }
-    ) + horizon
+    )
+      + horizon
   ),
   columns: (20%, 20%, 20%, 40%),
   table.header([*方法*], [*功能*], [*举例*], [*结果*]),
@@ -100,7 +101,8 @@
   align: (x, y) => (
     (
       if x == 0 or x == 1 or y == 0 { center } else { left }
-    ) + horizon
+    )
+      + horizon
   ),
   columns: (20%, 20%, 20%, 40%),
   table.header([*方法*], [*功能*], [*举例*], [*结果*]),
@@ -109,7 +111,7 @@
     write(s)
     ```
   ],
-  [写入全部内容],
+  [写入字符串s],
   [
     ```py
     f.write('Hello')
@@ -126,7 +128,7 @@
     writelines(lines)
     ```
   ],
-  [按行写入全部内容],
+  [按行写入字符串],
   [
     ```py
     f.writelines([
