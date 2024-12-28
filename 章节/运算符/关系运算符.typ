@@ -1,5 +1,7 @@
 #import "../lib.typ": None
 
+注：Python的等于和不等关系的运算符可以连着使用。比如`1 < 2 < 3`，`2 != 3 != 5`
+
 #table(
   table.header([*运算符*], [*C*], [*Python*]),
 

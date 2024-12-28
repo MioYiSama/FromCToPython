@@ -26,6 +26,7 @@
     from 模块 import 标识符 as 别名
 
     from 模块 import 标识符1, 标识符2, 标识符3
+    from 模块 import * # 导入所有标识符
     ```
   ],
 )

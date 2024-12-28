@@ -4,7 +4,8 @@
   align: (x, y) => (
     (
       if x == 0 or y == 0 { center } else { left }
-    ) + horizon
+    )
+      + horizon
   ),
   columns: (16%, 30%, 34%, 20%),
   table.header([*功能*], [*参数*], [*举例*], [*结果*]),
@@ -133,6 +134,7 @@
   [
     ```py
     'Hello, {}!'.format('world')
+    # 0表示第一个参数，1同理
     '{0}{1}{0}'.format('x', 'y')
     'pi = {:.2f}'.format(3.14159)
     ```
@@ -140,6 +142,7 @@
   [
     ```py
     'Hello, world!'
+
     'xyx'
     'pi = 3.14'
     ```
