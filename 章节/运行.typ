@@ -33,6 +33,8 @@
   ]
 )
 
-另见：#link(<InstallPython>)[*附录：安装Python*]
+另见：
 
-// TODO: REPL
+- #link(<InstallPython>)[*附录：安装Python*]
+
+- #link(<REPL>)[*附录：REPL*]

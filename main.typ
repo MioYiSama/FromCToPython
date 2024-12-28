@@ -152,19 +152,15 @@
 
 #include "章节/结构体和类/方法.typ"
 
+#pagebreak()
+
 == 区别
 
 #include "章节/结构体和类/区别.typ"
 
-#pagebreak()
-
 == 基础语法
 
 #include "章节/结构体和类/基础语法.typ"
-
-== 变量与内存
-
-#include "章节/结构体和类/变量与内存.typ"
 
 #pagebreak()
 
