@@ -1,6 +1,9 @@
-#table(
-  table.header([*分支*], [*C*], [*Python*]),
+#import "../../lib.typ": table_align
 
+#table(
+  align: table_align(rows: (0,), columns: (0,)),
+  columns: 3,
+  table.header([分支], [C], [Python]),
   [如果],
   [
     ```c

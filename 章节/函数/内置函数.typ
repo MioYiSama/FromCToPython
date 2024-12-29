@@ -1,14 +1,9 @@
-#import "../lib.typ": None
+#import "../../lib.typ": None, table_align, SeeAlso
 
 #table(
-  align: (x, y) => (
-    (
-      if x == 0 or x == 1 or y == 0 { center } else { left }
-    )
-      + horizon
-  ),
-  columns: (20%, 20%, 40%, 20%),
-  table.header([*函数*], [*功能*], [*举例*], [*结果*]),
+  align: table_align(rows: (0,), columns: (0, 1)),
+  columns: (21%, 19%, 40%, 20%),
+  table.header([函数], [功能], [举例], [结果]),
   [
     ```py
     input(
@@ -71,7 +66,7 @@
     round(x)
     ```
   ],
-  [求绝对值#linebreak() 四舍五入#footnote[严格来说不是四舍五入，但是被人们广泛称作四舍五入]],
+  [求绝对值#linebreak() 四舍五入#footnote[严格来说不是四舍五入，但是被广泛认作是四舍五入]],
   [
     ```py
     abs(-1)
@@ -154,17 +149,13 @@
   [判断x的类型#linebreak()是否为t],
   [
     ```py
-    def f(x):
-      print(isinstance(x, int))
-
+    def f(x): print(isinstance(x, int))
     f(1)
     f('1')
     ```
   ],
   [
     ```py
-
-
 
     True
     False
@@ -294,7 +285,7 @@
     )
     ```
   ],
-  [打开文件#linebreak() （详情见#quote[#link(<file>)[文件读写]]）],
+  [打开文件（#SeeAlso(l:<file>, name:"章节")）],
   [
     ```py
     open('1.txt', 'r', encoding='utf-8')

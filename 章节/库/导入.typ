@@ -1,14 +1,11 @@
+#import "../../lib.typ": table_align
+
 注：*标识符*指变量、函数、类等
 
 #table(
-  align: (x, y) => (
-    (
-      if y == 0 or x > 2 { center } else { left }
-    )
-      + horizon
-  ),
+  align: table_align(rows: (0,), columns: ()),
   columns: (50%, 50%),
-  table.header([*C*], [*Python*]),
+  table.header([C], [Python]),
   [
     ```c
     #include "头文件.h"

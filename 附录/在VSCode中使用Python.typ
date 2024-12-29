@@ -1,4 +1,3 @@
-
 1. 在VSCode的#quote[扩展]（Extensions）面板中搜索#quote[Python]，点击#quote[安装]（Install）
 
 #image("../图片/vscode-python-ext.png", width: 60%)

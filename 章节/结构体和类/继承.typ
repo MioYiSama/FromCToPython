@@ -9,11 +9,8 @@
     def introduce(self):
       print(f"Hi, I'm {self.name}!")
 
-  class Student(Person):
-    pass
-
-  class Teacher(Person):
-    pass
+  class Student(Person): pass
+  class Teacher(Person): pass
   ```
 ]
 
@@ -39,5 +36,3 @@
       print(f"I'm a student!")
   ```
 ]
-
-一个类可以同时继承多个类。

@@ -1,1 +1,0 @@
-#let None = align(center + horizon)[无]

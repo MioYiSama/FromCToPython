@@ -1,9 +1,11 @@
-#import "../lib.typ": None
+#import "../../lib.typ": None, table_align
 
 #table(
-  table.header([*转换*], [*C*], [*Python*]),
-
-  [浮点数 转 整数],
+  align: table_align(rows: (0,), columns: (0, 1, 4)),
+  columns: (10%, 10%, 35%, 25%, 20%),
+  table.header([从], [到], [C], [Python], [备注]),
+  [浮点数],
+  [整数],
   [
     ```c
     (int)x
@@ -14,8 +16,10 @@
     int(x)
     ```
   ],
+  [#None],
 
-  [整数 转 浮点数],
+  [整数],
+  [浮点数],
   [
     ```c
     (float)x
@@ -26,8 +30,10 @@
     float(x)
     ```
   ],
+  [#None],
 
-  [整数 转 字符串 #footnote[C语言需要 `#include <stdio.h>`]],
+  [整数],
+  [字符串],
   [
     ```c
     char s[256];
@@ -45,8 +51,10 @@
     hex(x) # 十六进制
     ```
   ],
+  [C语言需要`#include <stdio.h>`],
 
-  [字符串 转 整数 #footnote[C语言需要 `#include <stdlib.h>`]],
+  [字符串],
+  [整数],
   [
     ```c
     strtol(x, NULL, 10); // 十进制
@@ -63,36 +71,45 @@
     int(x, 16) # 十六进制
     ```
   ],
+  [C语言需要 `#include <stdlib.h>`],
 
-  [序列 转 列表],
+  [序列],
+  [列表],
   [#None],
   [
     ```py
     list(x)
     ```
   ],
+  [#None],
 
-  [序列 转 元组],
+  [序列],
+  [元组],
   [#None],
   [
     ```py
     tuple(x)
     ```
   ],
+  [#None],
 
-  [序列 转 集合],
+  [序列],
+  [集合],
   [#None],
   [
     ```py
     set(x)
     ```
   ],
+  [#None],
 
-  [序列 转 字典 #footnote[需要满足特定格式的序列，如`[['k1', 1], ['k2', 2]]`]],
+  [序列],
+  [字典],
   [#None],
   [
     ```py
     dict(x)
     ```
   ],
+  [需要满足特定格式的序列，如#linebreak()`[['k1', 1], ['k2', 2]]`],
 )

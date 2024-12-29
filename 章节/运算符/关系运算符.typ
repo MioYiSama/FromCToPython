@@ -1,10 +1,12 @@
-#import "../lib.typ": None
+#import "../../lib.typ": None
+注：
 
-注：Python的等于和不等关系的运算符可以连着使用。比如`1 < 2 < 3`，`2 != 3 != 5`
+- Python的等于和不等关系的运算符可以*连用*。比如`1 < 2 < 3`，`2 != 3 != 5`
 
 #table(
-  table.header([*运算符*], [*C*], [*Python*]),
-
+  align: center,
+  columns: 3,
+  table.header([运算符], [C], [Python]),
   [大于],
   [
     ```c
@@ -65,7 +67,6 @@
     ```
   ],
 
-
   [不等于],
   [
     ```c
@@ -94,7 +95,7 @@
     ```
   ],
 
-  [地址相同 #footnote[C语言没有完全对应的运算符]<a>],
+  [地址相同 @explain],
   [
     ```c
     &x == &y;
@@ -106,7 +107,7 @@
     ```
   ],
 
-  [地址不同 @a],
+  [地址不同 @explain],
   [
     ```c
     &x != &y;

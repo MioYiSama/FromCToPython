@@ -1,8 +1,11 @@
+#import "../../lib.typ": table_align
 
 #table(
-  table.header([函数], [C], [Python]),
-
-  [无参数无返回值],
+  align: table_align(rows: (0,), columns: (0, 1)),
+  columns: 4,
+  table.header([参数], [返回值], [C], [Python]),
+  [无],
+  [无],
   [
     ```c
     void f() {
@@ -23,7 +26,8 @@
     ```
   ],
 
-  [无参数有返回值],
+  [无],
+  [有],
   [
     ```c
     int f() {
@@ -38,7 +42,8 @@
     ```
   ],
 
-  [有参数无返回值],
+  [有],
+  [无],
   [
     ```c
     void f(int x) {
@@ -52,7 +57,8 @@
     ```
   ],
 
-  [有参数有返回值],
+  [有],
+  [有],
   [
     ```c
     int f(int x) {
@@ -67,7 +73,8 @@
     ```
   ],
 
-  [多个参数],
+  [多个],
+  [无],
   [
     ```c
     void f(int x, int y) {
@@ -79,5 +86,5 @@
     def f(x, y):
       pass
     ```
-  ]
+  ],
 )

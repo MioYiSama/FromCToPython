@@ -1,20 +1,16 @@
-#import "../lib.typ": None
+#import "../../lib.typ": None, table_align
 
 注：
+
 - Python的整数理论上没有大小范围，浮点数的绝对值的大小范围约为$[2.225 times 10^(-308), 1.8 times 10^(308)]$
 
 - 虽然Python没有*数组*，但是Python有功能比数组更强大的各种*序列*#footnote[将在后文详细介绍]（列表，元组，集合，字典等）
 
 #table(
-  columns: (20%, 34%, 34%, 12%),
-  table.header(
-    [*类型*],
-    [*C*],
-    [*Python*],
-    [*Python名*],
-  ),
-
-  [整数],
+  align: table_align(rows: (0,), columns: (0, 3)),
+  columns: (23%, 35%, 30%, 12%),
+  table.header([类型], [C], [Python], [Python名]),
+  [*整数*（Integer）],
   [
     ```c
     short x = 1;
@@ -32,7 +28,7 @@
   ],
   [`int`],
 
-  [浮点数],
+  [*浮点数*#linebreak()（Floating Point Number）],
   [
     ```c
     float x = 3.14;
@@ -47,7 +43,7 @@
   ],
   [`float`],
 
-  [复数],
+  [*复数*#linebreak()（Complex Number）],
   [#None],
   [
     ```py
@@ -56,7 +52,7 @@
   ],
   [`complex`],
 
-  [字符],
+  [*字符*（Character）],
   [
     ```c
     char x = 'a';
@@ -65,7 +61,7 @@
   [#None],
   [#None],
 
-  [布尔 #footnote[并非C语言原生类型，需要`#include <stdbool.h>`]],
+  [*布尔*#footnote[并非C语言原生类型，需要`#include <stdbool.h>`]（Boolean）],
   [
     ```c
     bool x = true;
@@ -78,7 +74,7 @@
   ],
   [`bool`],
 
-  [字符串],
+  [*字符串*（String）],
   [
     ```c
     char x[] = "Hello\nWorld";
@@ -92,16 +88,16 @@
   ],
   [`str`],
 
-  [数组],
+  [*数组*（Array）],
   [
     ```c
-    int x[] = {1, 2, 3};
+    int x[3] = {1, 2, 3};
     ```
   ],
   [#None],
   [#None],
 
-  [（整数）区间 #footnote[C语言并*没有*区间，相关代码仅用作*理解*使用]],
+  [*区间*#footnote[C语言并*没有*区间，此处仅用于理解。区间特指*整数区间*]（Range）],
   [
     ```c
     for (int i = 0; i < 5; i += 1);
@@ -120,7 +116,7 @@
   ],
   [`range`],
 
-  [列表],
+  [*列表*（List）],
   [#None],
   [
     ```py
@@ -129,7 +125,7 @@
   ],
   [`list`],
 
-  [元组],
+  [*元组*（Tuple）],
   [#None],
   [
     ```py
@@ -139,7 +135,7 @@
   ],
   [`tuple`],
 
-  [集合],
+  [*集合*（Set）],
   [#None],
   [
     ```py
@@ -148,7 +144,7 @@
   ],
   [`set`],
 
-  [字典],
+  [*字典*（Dictionary）],
   [#None],
   [
     ```py
@@ -160,7 +156,7 @@
   ],
   [`dict`],
 
-  [指针],
+  [*指针*（Pointer）],
   [
     ```c
     int* p = &x;
@@ -169,7 +165,7 @@
   [#None],
   [#None],
 
-  [空 #footnote[C语言并没有“空”这个类型，NULL只是功能类似于None，此处仅用于理解；NULL位于 `#include <stddef.h>` 中]],
+  [*空* #footnote[C语言并没有#quote[空]这个类型，此处仅用于理解；需要`#include <stddef.h>` ]],
   [
     ```c
     NULL

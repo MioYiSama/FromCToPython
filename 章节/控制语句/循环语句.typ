@@ -1,10 +1,15 @@
+#import "../../lib.typ": table_align
+
 注：
+
 - C语言的`for`只是`while`的变体
+
 - Python的`for`只能用于*遍历*一个*序列*
 
 #table(
+  align: table_align(rows: (0,), columns: (0,)),
+  columns: 3,
   table.header([循环], [C], [Python]),
-
   [`for`],
   [
     ```c

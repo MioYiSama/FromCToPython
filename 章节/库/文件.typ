@@ -1,10 +1,11 @@
-#import "../lib.typ": None
+#import "../../lib.typ": None, table_align
 
 === 打开和关闭文件
 
 #table(
-  columns: (15%, 42.5%, 42.5%),
-  table.header([*操作*], [*C*], [*Python*]),
+  align: table_align(rows: (0,), columns: (0,)),
+  columns: (15%, 40%, 45%),
+  table.header([操作], [C], [Python]),
   [打开文件],
   [
     ```c
@@ -35,14 +36,9 @@
 === 读取文件
 
 #table(
-  align: (x, y) => (
-    (
-      if x == 0 or x == 1 or y == 0 { center } else { left }
-    )
-      + horizon
-  ),
+  align: table_align(rows: (0,), columns: (0, 1)),
   columns: (20%, 20%, 20%, 40%),
-  table.header([*方法*], [*功能*], [*举例*], [*结果*]),
+  table.header([方法], [功能], [举例], [结果]),
   [
     ```py
     read()
@@ -98,14 +94,9 @@
 === 写入文件
 
 #table(
-  align: (x, y) => (
-    (
-      if x == 0 or x == 1 or y == 0 { center } else { left }
-    )
-      + horizon
-  ),
+  align: table_align(rows: (0,), columns: (0, 1)),
   columns: (20%, 20%, 20%, 40%),
-  table.header([*方法*], [*功能*], [*举例*], [*结果*]),
+  table.header([方法], [功能], [举例], [结果]),
   [
     ```py
     write(s)

@@ -1,4 +1,4 @@
-#import "../lib.typ": None
+#import "../../lib.typ": None
 
 #table(
   align: (x, y) => (
@@ -8,7 +8,7 @@
       + horizon
   ),
   columns: (16%, 30%, 34%, 20%),
-  table.header([*功能*], [*参数*], [*举例*], [*结果*]),
+  table.header([功能], [参数], [举例], [结果]),
   [连接],
   [#None],
   [

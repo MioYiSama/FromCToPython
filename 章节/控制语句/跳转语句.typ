@@ -1,8 +1,9 @@
-#import "../lib.typ": None
+#import "../../lib.typ": None, table_align
 
 #table(
-  table.header([跳转], [C], [Python]),
-
+  align: table_align(rows: (0,), columns: (0,)),
+  columns: 3,
+  table.header([跳转], [*C*], [*Python*]),
   [跳出循环],
   [
     ```c
@@ -45,5 +46,5 @@
     goto label;
     ```
   ],
-  [#None]
+  [#None],
 )

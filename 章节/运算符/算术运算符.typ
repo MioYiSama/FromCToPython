@@ -1,13 +1,16 @@
-#import "../lib.typ": None
+#import "../../lib.typ": None
 
 注：
+
 - Python的“*除*”的结果永远为*浮点数*
+
 - Python的“*整除*”的结果永远为*整数*（结果为*保留整数部分*的商）
 
 #table(
-  table.header([*运算符*], [*C*], [*Python*]),
-
-  [加 #footnote[可用于Python的字符串]<str>],
+  align: center,
+  columns: 3,
+  table.header([运算符], [C], [Python]),
+  [加],
   [
     ```c
     x + y;
@@ -31,7 +34,7 @@
     ```
   ],
 
-  [乘 @str],
+  [乘],
   [
     ```c
     x * y;
@@ -43,7 +46,7 @@
     ```
   ],
 
-  [除 #footnote[由于C语言的类型问题，C语言没有完全对应的运算符。]<div>],
+  [除],
   [
     ```c
     x * 1.0 / y;
@@ -55,7 +58,7 @@
     ```
   ],
 
-  [整除 @div],
+  [整除],
   [
     ```c
     (int)x / (int)y;
@@ -79,7 +82,7 @@
     ```
   ],
 
-  [乘方 @a],
+  [乘方 #footnote[C语言代码仅用于理解]<explain>],
   [
     ```c
     pow(x, y);

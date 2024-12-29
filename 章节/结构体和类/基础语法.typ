@@ -1,12 +1,13 @@
-#import "../lib.typ": None
+#import "../../lib.typ": None, table_align
 
 注：
 - Python的实例方法的第一个参数为实例自身，并通常起名为#quote[self]
 - Python的类的属性和Python的变量一样，都不需要声明，但需要先赋值后使用
 
 #table(
-  table.header([*结构体与类*], [*C*], [*Python*]),
-
+  align: table_align(rows: (0,), columns: (0,)),
+  columns: 3,
+  table.header([结构体与类], [C], [Python]),
   [基础定义],
   [
     ```c

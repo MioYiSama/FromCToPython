@@ -1,16 +1,11 @@
-#import "../lib.typ": None
+#import "../../lib.typ": None, table_align
 
 === 列表
 
 #table(
-  align: (x, y) => (
-    (
-      if x == 0 or y == 0 { center } else { left }
-    )
-      + horizon
-  ),
+  align: table_align(rows: (0,), columns: (0,)),
   columns: (16%, 30%, 34%, 20%),
-  table.header([*功能*], [*参数*], [*举例*], [*结果*]),
+  table.header([功能], [参数], [举例], [结果]),
   [连接],
   [#None],
   [

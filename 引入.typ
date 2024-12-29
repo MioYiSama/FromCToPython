@@ -6,7 +6,7 @@
 )
 
 #align(center)[
-  #text(size: 20pt, weight: "bold")[
+  #text(size: 16pt, weight: "bold")[
     前言
   ]
 ]

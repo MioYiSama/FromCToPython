@@ -1,4 +1,4 @@
-#import "../lib.typ": None
+#import "../../lib.typ": None, table_align
 
 集合在元组的基础上，多了一个“元素不重复”的特点，并且集合中的元素永远保持有序#footnote[指排好序了]。但是集合无法使用索引和下标等相关功能。
 
@@ -34,14 +34,9 @@
 集合独有的常用方法：
 
 #table(
-  align: (x, y) => (
-    (
-      if x == 0 or y == 0 { center } else { left }
-    )
-      + horizon
-  ),
-  columns: (16%, 40%, 24%, 20%),
-  table.header([*功能*], [*参数*], [*举例*], [*结果*]),
+  align: table_align(rows: (0,), columns: (0,)),
+  columns: (12%, 44%, 30%, 14%),
+  table.header([功能], [参数], [举例], [结果]),
   [集合运算],
   [
     ```py

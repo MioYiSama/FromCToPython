@@ -1,4 +1,4 @@
-#import "../lib.typ": None
+#import "../../lib.typ": None, table_align
 
 字典在集合的基础上，把存储元素变成了键值对。但是字典只保证#quote[键]不重复，并且字典可以用#quote[键]做索引。
 
@@ -28,14 +28,9 @@
 字典独有的常用方法：
 
 #table(
-  align: (x, y) => (
-    (
-      if x == 0 or y == 0 { center } else { left }
-    )
-      + horizon
-  ),
+  align: table_align(rows: (0,), columns: (0,)),
   columns: (20%, 20%, 20%, 42%),
-  table.header([*功能*], [*参数*], [*举例*], [*结果*]),
+  table.header([功能], [参数], [举例], [结果]),
   [获取字典中的元素],
   [
     ```py

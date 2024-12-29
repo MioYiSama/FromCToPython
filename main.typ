@@ -1,50 +1,37 @@
-#set page(margin: 1cm)
+#import "lib.typ": *
 
-#set heading(
-  numbering: (..nums) => {
-    let (x, ..a) = nums.pos()
-
-    if (a.len() == 0) {
-      return "第" + numbering("一", x) + "章"
-    } else {
-      return sym.section + nums.pos().map(str).join(".")
-    }
-  },
-)
-
+/* 字体 */
 #set text(
   lang: "cn",
   font: "Noto Serif CJK SC",
 )
-
 #show raw: set text(
   font: (
     "Consolas",
     "Noto Serif CJK SC",
   ),
 )
+#show raw.where(block: true): set text(size: 10pt)
+#show raw.where(block: false): set text(size: 11pt)
 
-#show image: set align(center)
-
-#set table(
-  align: (x, y) => (
-    (
-      if x == 0 or y == 0 or x > 2 { center } else { left }
-    )
-      + horizon
-  ),
-  columns: (18%, 41%, 41%),
+#set page(
+  margin: 1cm,
+  background: Watermark,
 )
-
+#set heading(numbering: heading_numbering)
+#show table: set align(center)
 #set table.cell(breakable: false)
+#show table.cell.where(y: 0): set text(weight: "bold")
+#show image: set align(center)
+#set rect(stroke: 0.3mm)
 
-// ------------------------------
+// ------------------------------------------------------------
 
 #include "封面.typ"
 
 #set page(numbering: "1 / 1")
 
-#include "目录.typ"
+#include "引入.typ"
 
 #pagebreak()
 
@@ -52,7 +39,7 @@
 
 #include "章节/运行.typ"
 
-= 语法
+= 部分语法
 
 #include "章节/语法.typ"
 
@@ -86,6 +73,8 @@
 
 #pagebreak()
 
+#set page(columns: 2)
+
 = 运算符
 
 == 算术运算符
@@ -96,7 +85,7 @@
 
 #include "章节/运算符/逻辑运算符.typ"
 
-#pagebreak()
+#colbreak()
 
 == 关系运算符
 
@@ -105,6 +94,8 @@
 == 位运算符
 
 #include "章节/运算符/位运算符.typ"
+
+#set page(columns: 1)
 
 #pagebreak()
 
@@ -154,17 +145,16 @@
 
 #include "章节/结构体和类/方法.typ"
 
-#pagebreak()
-
 == 区别
 
 #include "章节/结构体和类/区别.typ"
+
+#pagebreak()
 
 == 基础语法
 
 #include "章节/结构体和类/基础语法.typ"
 
-#pagebreak()
 
 == 继承
 
