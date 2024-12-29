@@ -14,7 +14,7 @@
   ```
 ]
 
-这里Student和Teacher都继承了Person类，它们都拥有Person的`__init__`方法和属性`name`。其中被继承的类（Person）被称为*父类*（Parent Class），继承者(Student和Teacher）被称为*子类*（Child Class）。
+这里Student和Teacher都继承了Person类，它们都拥有Person的`__init__`方法和属性`name`。其中被继承的类（Person）被称为*父类*（Parent Class），继承者（Student和Teacher）被称为*子类*（Child Class）。
 
 子类可以覆盖父类的属性和方法，比如：
 
@@ -33,6 +33,6 @@
   class Student(Person):
     def introduce(self):
       super().introduce()
-      print(f"I'm a student!")
+      print("I'm a student!")
   ```
 ]

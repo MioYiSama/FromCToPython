@@ -5,7 +5,7 @@
 #table(
   columns: 3,
   align: center + horizon,
-  table.header([类型], [组成元素], [可变性]),
+  table.header([类型], [组成元素], [可变性#footnote[指能否添加、删除元素]]),
   [*字符串*（String）], [字符], [不可变],
   [*区间*（Range）], [整数], [不可变],
   [*列表*（List）], [任意], [可变],

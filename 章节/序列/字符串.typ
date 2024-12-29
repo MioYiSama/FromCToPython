@@ -171,7 +171,7 @@
   [
     （字面量风格）
 
-    格式化#footnote[又被称为f-string]
+    格式化#footnote[又被称为f-string，即在字符串字面量前面加上前缀#quote[`f`]]
   ],
   [#None],
   [

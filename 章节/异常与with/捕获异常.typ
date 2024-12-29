@@ -26,17 +26,25 @@
   def f(x, y):
     return x / y
 
-
   try:
       f('1', 1)
       f(1, 0)
   except ZeroDivisionError:
       print('出现了除数为0的错误')
   except TypeError as e:
-      print('出现了类型错误：', e)
+      print('出现了类型错误:', e)
   except RuntimeError | SyntaxError:
       print('无法运行代码')
   finally:
       print('Done')
+  ```
+]
+
+运行结果：
+
+#rect[
+  ```
+  出现了类型错误: unsupported operand type(s) for /: 'str' and 'int'
+  Done
   ```
 ]
