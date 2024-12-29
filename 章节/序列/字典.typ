@@ -1,14 +1,16 @@
 #import "../../lib.typ": None, table_align
 
-字典在集合的基础上，把存储元素变成了键值对。但是字典只保证#quote[键]不重复，并且字典可以用#quote[键]做索引。
+*字典*就是由*键值对*（Key-Value Pair）组成的序列。#quote[键值对]指由#quote[*键*]（Key）和#quote[*值*]（Value）配对而成的一对元素。比如，对于#quote[`'age': 18`]来说，
+#quote[`age`]为#quote[键]，
+#quote[`18`]为#quote[值]。
 
-#line(length: 100%)
+字典在集合的基础上，把存储元素变成了键值对。但是字典保证的是*#quote[键]不重复*，并且字典以#quote[键]作为*索引*。
 
 与列表或集合相同或相似的方法：
 
 #table(
   align: center + horizon,
-  columns: (25%, 25%, 50%),
+  columns: 3,
   table.header([集合], [列表或集合], [备注]),
   [`clear`], [`clear`], [#None],
   [`copy`], [`copy`], [#None],
@@ -21,7 +23,7 @@
   ],
 
   [`popitem()`], [集合的`pop()`], [#None],
-  [`update(other)`], [集合的`update`], [添加字典`other`中的键值对。#linebreak()如果键已存在则覆盖原有的值],
+  [`update(other)`], [集合的`update`], [添加字典`other`中的所有键值对。#linebreak()如果键已存在则*覆盖*原有的值],
 )
 
 
@@ -29,7 +31,7 @@
 
 #table(
   align: table_align(rows: (0,), columns: (0,)),
-  columns: (20%, 20%, 20%, 42%),
+  columns: (10%, 27%, 23%, 40%),
   table.header([功能], [参数], [举例], [结果]),
   [获取字典中的元素],
   [
@@ -45,7 +47,7 @@
   [
     ```py
     dic = {
-      'name': 'Steve',
+      'name': 'S',
       'age': 18
     }
 
@@ -61,9 +63,9 @@
 
 
 
-    dict_items([('name', 'Steve'), ('age', 18)])
+    dict_items([('name','S'),('age',18)])
     dict_keys(['name', 'age'])
-    dict_values(['Steve', 18])
+    dict_values(['S', 18])
     ```
   ],
 
@@ -113,7 +115,10 @@
   ],
   [
     ```py
+
+
     {0:5, 1:'1', 2:'2'}
+
     {0:5, 1:'1', 2:'2'}
     ```
   ],

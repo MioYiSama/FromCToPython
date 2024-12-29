@@ -47,7 +47,7 @@
 
 = 变量
 
-== 变量总览
+== 变量总览<Var>
 
 #include "章节/变量/变量总览.typ"
 
@@ -123,6 +123,12 @@
 
 #pagebreak()
 
+== 变量作用域
+
+#include "章节/函数/变量作用域.typ"
+
+#pagebreak()
+
 == Python专有语法
 
 #include "章节/函数/Python专有语法.typ"
@@ -178,6 +184,8 @@
 
 #include "章节/序列/字符串.typ"
 
+#pagebreak()
+
 == 区间
 
 #include "章节/序列/区间.typ"
@@ -196,7 +204,7 @@
 
 #pagebreak()
 
-== 字典
+== 字典<Dict>
 
 #include "章节/序列/字典.typ"
 
@@ -244,7 +252,7 @@
 
 #pagebreak()
 
-= 异常与`with`
+= 异常与with
 
 == 异常的概念
 
@@ -260,7 +268,7 @@
 
 #include "章节/异常与with/抛出异常.typ"
 
-== `with`
+== with
 
 #include "章节/异常与with/with.typ"
 

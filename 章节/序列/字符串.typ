@@ -1,13 +1,8 @@
-#import "../../lib.typ": None
+#import "../../lib.typ": None, table_align
 
 #table(
-  align: (x, y) => (
-    (
-      if x == 0 or y == 0 { center } else { left }
-    )
-      + horizon
-  ),
-  columns: (16%, 30%, 34%, 20%),
+  align: table_align(rows: (0,), columns: (0,)),
+  columns: (16%, 30%, 35%, 19%),
   table.header([功能], [参数], [举例], [结果]),
   [连接],
   [#None],
@@ -78,7 +73,7 @@
     ```
   ],
 
-  [统计字符串出现次数],
+  [统计某字符串#linebreak()出现次数],
   [
     ```py
     # sub：字符串
@@ -124,7 +119,11 @@
     ```
   ],
 
-  [（方法风格）#linebreak() 格式化],
+  [
+    （方法风格）
+
+    格式化
+  ],
   [
     ```py
     # args: 用于替换的参数
@@ -148,7 +147,11 @@
     ```
   ],
 
-  [（C风格）#linebreak() 格式化],
+  [
+    （C风格）
+
+    格式化
+  ],
   [#None],
   [
     ```py
@@ -165,7 +168,11 @@
     ```
   ],
 
-  [（字面量风格）#linebreak()格式化],
+  [
+    （字面量风格）
+
+    格式化#footnote[又被称为f-string]
+  ],
   [#None],
   [
     ```py
@@ -190,7 +197,7 @@
     ```
   ],
 
-  [拼接 #footnote[以字符串本身作为分隔符]],
+  [拼接序列 #footnote[以字符串本身作为分隔符]],
   [
     ```py
     # iterable：一个序列
@@ -210,12 +217,12 @@
     ```
   ],
 
-  [查找 #footnote[找到了返回第一次出现的开始索引，找不到返回-1]],
+  [查找字符串 #footnote[找到则返回第一次出现的开始索引，找不到返回-1]],
   [
     ```py
     # sub：字符串
     # start：开始索引（默认为0）
-    # end：结束索引（默认为最后一个 索引）
+    # end：结束索引（默认为最后一个索引）
     find(sub)
     find(sub, start)
     find(sub, start, end)
@@ -236,7 +243,7 @@
     ```
   ],
 
-  [替换],
+  [替换字符串],
   [
     ```py
     # old：原字符串

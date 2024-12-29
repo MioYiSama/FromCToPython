@@ -1,4 +1,4 @@
-有的时候，两个类可能会有共用的属性和方法，比如。这个时候就可以通过#quote[继承]，将一个类的属性和方法都复制到另一个类之中。比如：
+有的时候，两个类可能会有共用的属性和方法。这个时候就可以通过#quote[*继承*]（Inheritance），将一个类的属性和方法都复制到另一个类之中。比如：
 
 #rect[
   ```py
@@ -14,9 +14,9 @@
   ```
 ]
 
-此时Student和Teacher都继承了Person类，都拥有Person的`__init__`方法和属性`name`。其中Person被称为*父类*，Student和Teacher被称为*子类*。
+这里Student和Teacher都继承了Person类，它们都拥有Person的`__init__`方法和属性`name`。其中被继承的类（Person）被称为*父类*（Parent Class），继承者(Student和Teacher）被称为*子类*（Child Class）。
 
-子类的属性和方法都可以覆盖父类的方法，比如：
+子类可以覆盖父类的属性和方法，比如：
 
 #rect[
   ```py

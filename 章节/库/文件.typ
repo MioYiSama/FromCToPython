@@ -91,7 +91,7 @@
   ],
 )
 
-=== 写入文件
+=== 文件写入
 
 #table(
   align: table_align(rows: (0,), columns: (0, 1)),

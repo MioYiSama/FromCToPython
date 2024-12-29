@@ -1,5 +1,5 @@
 注：
-- *标准库*，指Python自带的库
+- *标准库*（Standard Library），指Python自带的库
 - 篇幅限制，只放文档链接
 
 #table(

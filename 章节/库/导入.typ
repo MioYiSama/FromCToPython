@@ -1,6 +1,6 @@
 #import "../../lib.typ": table_align
 
-注：*标识符*指变量、函数、类等
+注：*标识符*（Identifier）指变量、函数、类等
 
 #table(
   align: table_align(rows: (0,), columns: ()),

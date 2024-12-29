@@ -1,14 +1,12 @@
 #import "../../lib.typ": None, table_align
 
-集合在元组的基础上，多了一个“元素不重复”的特点，并且集合中的元素永远保持有序#footnote[指排好序了]。但是集合无法使用索引和下标等相关功能。
-
-#line(length: 100%)
+集合在元组的基础上，多了一个“元素不重复”的特点。并且集合中的元素永远保持有序#footnote[指元素始终保持从小到大排序]。但是集合*无法使用*索引等相关功能。
 
 与列表相同或相似的方法：
 
 #table(
   align: center + horizon,
-  columns: (25%, 25%, 50%),
+  columns: 3,
   table.header([集合], [列表], [备注]),
   [add], [append], [#None],
   [clear], [clear], [#None],
@@ -35,7 +33,7 @@
 
 #table(
   align: table_align(rows: (0,), columns: (0,)),
-  columns: (12%, 44%, 30%, 14%),
+  columns: 4,
   table.header([功能], [参数], [举例], [结果]),
   [集合运算],
   [
