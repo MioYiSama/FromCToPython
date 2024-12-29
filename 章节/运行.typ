@@ -9,7 +9,7 @@
     C语言属于*编译型语言*，需要通过*编译器*（Compiler），*编译*（Compile）成二进制的机器指令才能运行
   ],
   [
-    Python属于*解释型语言*，不需要*编译*（Interpret）,但需要通过*解释器*（Interpreter）运行
+    Python属于*解释型语言*，不需要*编译*（Interpret），但需要通过*解释器*（Interpreter）运行
   ],
 
   [*入口点*（Entrypoint）],

@@ -8,7 +8,7 @@
 
 #table(
   align: table_align(rows: (0,), columns: (0, 3)),
-  columns: (23%, 35%, 30%, 12%),
+  columns: 4,
   table.header([类型], [C], [Python], [Python名]),
   [*整数*（Integer）],
   [
@@ -28,12 +28,11 @@
   ],
   [`int`],
 
-  [*浮点数*#linebreak()（Floating Point Number）],
+  [*浮点数*#linebreak()#text(size: 9.5pt)[(Floating Point Number)]],
   [
     ```c
     float x = 3.14;
     double x = 3.14;
-    long double x = 3.14;
     ```
   ],
   [
