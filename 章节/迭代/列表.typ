@@ -1,6 +1,30 @@
-#import "../../lib.typ": None, table_align
+#import "../../lib.typ": None, table_align, Line, SeeAlso
 
-=== 列表
+列表创建#SeeAlso(l: <Var>, name: "章节")
+
+与集合相同或相似的方法：
+
+#table(
+  align: center + horizon,
+  columns: 3,
+  table.header([列表], [集合], [备注]),
+  [`append(obj)`], [`add(obj)`], [#None],
+  [`clear()`], [`clear()`], [#None],
+  [`copy()`], [`copy()`], [#None],
+  [`remove(value)`], [`remove(value)`], [#None],
+  [`extend(other)`], [`update(other)`], [#None],
+)
+
+与字典相同或相似的方法：
+
+#table(
+  align: center + horizon,
+  columns: 3,
+  table.header([列表], [字典], [备注]),
+  [`pop(index=-1)`], [`pop(key)`], [列表的`pop()`没有`default`参数],
+)
+
+列表的常用方法：
 
 #table(
   align: table_align(rows: (0,), columns: (0,)),
@@ -32,70 +56,6 @@
     ```
   ],
 
-  [添加元素],
-  [
-    ```py
-    # obj：元素
-    append(obj)
-    ```
-  ],
-  [
-    ```py
-    a = [1, 2]
-    a.append(3)
-    print(a)
-    ```
-  ],
-  [
-    ```py
-
-
-    [1, 2, 3]
-    ```
-  ],
-
-  [清空列表],
-  [
-    ```py
-    clear()
-    ```
-  ],
-  [
-    ```py
-    a = [1, 2, 3]
-    a.clear()
-    print(a)
-    ```
-  ],
-  [
-    ```py
-
-
-    []
-    ```
-  ],
-
-  [复制列表],
-  [
-    ```py
-    copy()
-    ```
-  ],
-  [
-    ```py
-    a = [1, 2, 3]
-    b = a.copy()
-    print(b)
-    ```
-  ],
-  [
-    ```py
-
-
-    [1, 2, 3]
-    ```
-  ],
-
   [统计元素个数],
   [
     ```py
@@ -113,28 +73,6 @@
     ```py
 
     2
-    ```
-  ],
-
-  [扩充列表],
-  [
-    ```py
-    # iterable：序列
-    extend(iterable)
-    ```
-  ],
-  [
-    ```py
-    a = [1, 2]
-    a.extend([3, 4])
-    print(a)
-    ```
-  ],
-  [
-    ```py
-
-
-    [1, 2, 3, 4]
     ```
   ],
 
@@ -185,34 +123,6 @@
     ```
   ],
 
-  [删除元素],
-  [
-    ```py
-    # index：需要删除的元素的索引
-    pop(index=-1) # 返回被删除的元素
-    # value：需要删除的元素
-    remove(value) # 仅删除第一个
-    ```
-  ],
-  [
-    ```py
-    a = [1, 2]
-    print(a.pop(0))
-    print(a)
-    a.remove(2)
-    print(a)
-    ```
-  ],
-  [
-    ```py
-
-    1
-    [2]
-
-    []
-    ```
-  ],
-
   [翻转列表],
   [
     ```py
@@ -257,7 +167,17 @@
   ],
 )
 
-=== 元组
+#Line
 
-元组和列表相比，几乎唯一的区别就是元组是*不可变*#footnote[指元组的长度和元素不能发生改变]（Immutable）的。
-因此元组仅拥有列表的`count`和`index`方法以及#quote[连接（`+`）]和#quote[重复（`*`）]的操作。
+创建列表的时候，可以借助生成式来指定列表内的元素。比如：
+
+#rect[
+  ```py
+  a = [i*i for i in [1, 2, 3]]
+  # 等价于 a = [1, 4, 9]
+  ```
+]
+
+这种列表创建方式被称为#quote[*列表推导式*]（List Comprehension）。
+
+类似地，集合和字典也可以使用这种生成式写法。

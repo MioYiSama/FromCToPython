@@ -14,10 +14,7 @@
 #show raw.where(block: true): set text(size: 10pt)
 #show raw.where(block: false): set text(size: 11pt)
 
-#set page(
-  margin: 1cm,
-  background: Watermark,
-)
+#set page(margin: 1cm)
 #set heading(numbering: heading_numbering)
 #show table: set align(center)
 #set table.cell(breakable: false)
@@ -51,9 +48,9 @@
 
 #include "章节/变量/变量的声明、赋值和使用.typ"
 
-== 变量总览<Var>
+== 常用变量总览<Var>
 
-#include "章节/变量/变量总览.typ"
+#include "章节/变量/常用变量总览.typ"
 
 == 特殊字面量
 
@@ -64,7 +61,6 @@
 #include "章节/变量/变量类型转换.typ"
 
 #pagebreak()
-
 
 == 特殊赋值方式
 
@@ -154,58 +150,75 @@
 
 #include "章节/结构体和类/基础语法.typ"
 
-
 == 继承
 
 #include "章节/结构体和类/继承.typ"
 
 #pagebreak()
 
-= 序列
+= 迭代<Iterate>
 
-== 概念
+== 迭代
 
-#include "章节/序列/概念.typ"
-
-== 通用功能
-
-#include "章节/序列/通用.typ"
+#include "章节/迭代/迭代.typ"
 
 #pagebreak()
 
-== 字符串
+== 容器
 
-#include "章节/序列/字符串.typ"
-
-== 区间
-
-#include "章节/序列/区间.typ"
+#include "章节/迭代/容器.typ"
 
 #pagebreak()
 
-== 列表和元组
+== 集合（Collection）
 
-#include "章节/序列/列表和元组.typ"
+#quote[*集合*]（Collection）指*可迭代*的*容器*。
 
-#pagebreak()
+=== 集合（Set）
 
-== 集合
-
-#include "章节/序列/集合.typ"
+#include "章节/迭代/集合.typ"
 
 #pagebreak()
 
-== 字典<Dict>
+=== 字典
 
-#include "章节/序列/字典.typ"
+#include "章节/迭代/字典.typ"
+
+#pagebreak()
+
+== 序列
+
+#include "章节/迭代/序列.typ"
+
+#pagebreak()
+
+=== 字符串
+
+#include "章节/迭代/字符串.typ"
+
+#pagebreak()
+
+=== 列表
+
+#include "章节/迭代/列表.typ"
+
+#pagebreak()
+
+=== 元组
+
+#include "章节/迭代/元组.typ"
+
+=== 区间
+
+#include "章节/迭代/区间.typ"
 
 #pagebreak()
 
 = 内存
 
-== 区别
+== 引用
 
-#include "章节/内存/区别.typ"
+#include "章节/内存/引用.typ"
 
 == 实际参数与形式参数
 
@@ -214,12 +227,6 @@
 == 缓存
 
 #include "章节/内存/缓存.typ"
-
-#pagebreak()
-
-= 生成器
-
-#include "章节/生成器.typ"
 
 #pagebreak()
 
@@ -261,7 +268,7 @@
 
 #pagebreak()
 
-= 异常与with
+= 异常与with关键字
 
 == 异常的概念
 
@@ -277,7 +284,7 @@
 
 #include "章节/异常与with/捕获异常.typ"
 
-== with
+== with关键字
 
 #include "章节/异常与with/with.typ"
 

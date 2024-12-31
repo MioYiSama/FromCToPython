@@ -2,7 +2,7 @@
 #let Line = line(length: 100%)
 #let Watermark = rotate(
   -calc.atan(calc.sqrt(2)),
-  text(72pt, fill: gray.lighten(75%))[
+  text(72pt, fill: gray.lighten(80%))[
     *澪依 © 版权所有*
   ],
 )

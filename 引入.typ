@@ -1,4 +1,6 @@
-#set page(columns: 2)
+#import "lib.typ": Watermark
+
+#set page(columns: 2, background: Watermark)
 
 #outline(
   title: [目录],

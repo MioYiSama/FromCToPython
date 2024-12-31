@@ -4,7 +4,7 @@
 
 - Python的整数理论上没有大小范围，浮点数的绝对值的大小范围约为$[2.225 times 10^(-308), 1.8 times 10^(308)]$
 
-- 虽然Python没有*数组*，但是Python有功能比数组更强大的各种*序列*#footnote[将在后文详细介绍]（列表，元组，集合，字典等）
+- 虽然Python没有*数组*，但是Python有功能比数组更强大的*列表*#footnote[将在后文详细介绍]
 
 #table(
   align: table_align(rows: (0,), columns: (0, 3)),
@@ -96,25 +96,6 @@
   [#None],
   [#None],
 
-  [*区间*#footnote[C语言并*没有*区间，此处仅用于理解。区间特指*整数区间*]（Range）],
-  [
-    ```c
-    for (int i = 0; i < 5; i += 1);
-    for (int i = 2; i < 5; i += 1);
-    for (int i = 0; i < 5; i += 2);
-    for (int i = 5; i > 0; i += -1);
-    ```
-  ],
-  [
-    ```py
-    x = range(5)
-    x = range(2, 5)
-    x = range(0, 5, 2)
-    x = range(5, 0, -1)
-    ```
-  ],
-  [`range`],
-
   [*列表*（List）],
   [#None],
   [
@@ -154,6 +135,25 @@
     ```
   ],
   [`dict`],
+
+  [*区间*#footnote[C语言并*没有*区间，此处仅用于理解。区间特指*整数区间*]（Range）],
+  [
+    ```c
+    for (int i = 0; i < 5; i += 1);
+    for (int i = 2; i < 5; i += 1);
+    for (int i = 0; i < 5; i += 2);
+    for (int i = 5; i > 0; i += -1);
+    ```
+  ],
+  [
+    ```py
+    x = range(5)
+    x = range(2, 5)
+    x = range(0, 5, 2)
+    x = range(5, 0, -1)
+    ```
+  ],
+  [`range`],
 
   [*指针*（Pointer）],
   [

@@ -1,4 +1,4 @@
-#import "../../lib.typ": None, table_align
+#import "../../lib.typ": None, table_align, SeeAlso
 
 #table(
   align: table_align(rows: (0,), columns: (0, 1, 4)),
@@ -73,7 +73,7 @@
   ],
   [C语言需要 `#include <stdlib.h>`],
 
-  [序列],
+  [可迭代对象 #footnote[详情#SeeAlso(l: <Iterate>, name: "章节")]<iterable>],
   [列表],
   [#None],
   [
@@ -83,7 +83,7 @@
   ],
   [#None],
 
-  [序列],
+  [可迭代对象 @iterable],
   [元组],
   [#None],
   [
@@ -93,7 +93,7 @@
   ],
   [#None],
 
-  [序列],
+  [可迭代对象 @iterable],
   [集合],
   [#None],
   [
@@ -103,7 +103,7 @@
   ],
   [#None],
 
-  [序列],
+  [可迭代对象 @iterable],
   [字典],
   [#None],
   [
