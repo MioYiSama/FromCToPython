@@ -2,7 +2,7 @@
 
 #table(
   align: table_align(rows: (0,), columns: (0, 1)),
-  columns: (21%, 19%, 40%, 20%),
+  columns: 4,
   table.header([函数], [功能], [举例], [结果]),
   [
     ```py
@@ -149,13 +149,15 @@
   [判断x的类型#linebreak()是否为t],
   [
     ```py
-    def f(x): print(isinstance(x, int))
+    def f(x):
+      print(isinstance(x,int))
     f(1)
     f('1')
     ```
   ],
   [
     ```py
+
 
     True
     False
@@ -207,14 +209,18 @@
       # 打开模式
       mode='r',
       # 编码
-      encoding
+      encoding=None
     )
     ```
   ],
-  [打开文件（#SeeAlso(l:<file>, name:"章节")）],
+  [打开文件#linebreak()（#SeeAlso(l:<file>, name:"章节")）],
   [
     ```py
-    open('1.txt', 'r', encoding='utf-8')
+    open(
+      '1.txt',
+      'r',
+      encoding='utf-8'
+    )
     ```
   ],
   [#None],
@@ -359,11 +365,10 @@
 
   [
     ```py
+    # 参数解释同列表的sort方法
     sorted(
       iterable,
-      # 是否降序排序
       reverse=False,
-      # 排序依据
       key=None
     )
     ```

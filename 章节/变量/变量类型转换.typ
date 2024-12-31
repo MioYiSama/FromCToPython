@@ -2,7 +2,7 @@
 
 #table(
   align: table_align(rows: (0,), columns: (0, 1, 4)),
-  columns: (10%, 10%, 35%, 25%, 20%),
+  columns: (14%, 8%, 34%, 24%, 20%),
   table.header([从], [到], [C], [Python], [备注]),
   [浮点数],
   [整数],
@@ -72,6 +72,18 @@
     ```
   ],
   [C语言需要 `#include <stdlib.h>`],
+
+  [任意类型],
+  [布尔],
+  [
+    #None
+  ],
+  [
+    ```py
+    bool(x)
+    ```
+  ],
+  [#None],
 
   [可迭代对象 #footnote[详情#SeeAlso(l: <Iterate>, name: "章节")]<iterable>],
   [列表],

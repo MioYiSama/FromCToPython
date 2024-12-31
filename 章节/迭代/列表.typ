@@ -24,7 +24,7 @@
   [`pop(index=-1)`], [`pop(key)`], [列表的`pop()`没有`default`参数],
 )
 
-列表的常用方法：
+列表的的常用方法和操作：
 
 #table(
   align: table_align(rows: (0,), columns: (0,)),
@@ -147,15 +147,21 @@
   [排序],
   [
     ```py
-    # 参数解释同sorted函数
-    sort(key=None,reverse=False)
+    sort(
+      # 是否降序排序
+      reverse=False,
+      # 排序依据（将元素映射为其他值）
+      key=None
+    )
     ```
   ],
   [
     ```py
+    def f(x): return -x
     a = [3, 1, 4, 2, 5]
-    a.sort()
-    print(a)
+    a.sort(); print(a)
+    a.sort(reverse=True); print(a)
+    a.sort(key=f); print(a)
     ```
   ],
   [
@@ -163,13 +169,15 @@
 
 
     [1, 2, 3, 4, 5]
+    [5, 4, 3, 2, 1]
+    [5, 4, 3, 2, 1]
     ```
   ],
 )
 
 #Line
 
-创建列表的时候，可以借助生成式来指定列表内的元素。比如：
+创建列表的时候，可以借助简化的生成器表达式来指定列表内的元素。比如：
 
 #rect[
   ```py
@@ -180,4 +188,4 @@
 
 这种列表创建方式被称为#quote[*列表推导式*]（List Comprehension）。
 
-类似地，集合和字典也可以使用这种生成式写法。
+类似地，集合（Set）和字典也可以使用这种生成式写法。

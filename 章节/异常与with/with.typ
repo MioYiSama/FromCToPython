@@ -5,9 +5,9 @@
   f = open('1.txt')
 
   try:
-      print(f.read())
+    print(f.read())
   finally:
-      f.close()
+    f.close()
   ```
 ]
 

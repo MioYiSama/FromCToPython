@@ -1,5 +1,9 @@
 #import "../../lib.typ": table_align
 
+注：
+
+- Python的函数无法像C语言一样拆分“声明”和“实现”，换句话说Python的函数在声明的同时就要包含实现。
+
 #table(
   align: table_align(rows: (0,), columns: (0, 1)),
   columns: 4,
@@ -12,7 +16,7 @@
     }
 
     void f() {
-      return
+      return;
     }
     ```
   ],

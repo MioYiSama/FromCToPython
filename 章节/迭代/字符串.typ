@@ -1,5 +1,7 @@
 #import "../../lib.typ": None, table_align
 
+字符串的常用方法和操作：
+
 #table(
   align: table_align(rows: (0,), columns: (0,)),
   columns: (16%, 30%, 35%, 19%),
@@ -197,10 +199,10 @@
     ```
   ],
 
-  [拼接序列 #footnote[以字符串本身作为分隔符]],
+  [拼接可迭代对象 #footnote[以字符串本身作为分隔符]],
   [
     ```py
-    # iterable：一个序列
+    # iterable：可迭代对象
     join(iterable)
     ```
   ],

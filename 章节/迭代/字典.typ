@@ -38,7 +38,7 @@
   [`update(other)`], [`update(other)`], [添加字典`other`中的所有键值对。#linebreak()如果键已存在则*覆盖*原有的值],
 )
 
-字典的常用的方法和操作：
+字典的常用方法和操作：
 
 #table(
   align: table_align(rows: (0,), columns: (0,)),

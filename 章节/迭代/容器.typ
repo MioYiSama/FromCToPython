@@ -14,7 +14,7 @@
   ```
 ]
 
-实际上#quote[`if a`]调用了#quote[`bool(a)`]，即将`a`转换为`bool`后再进行的判断。只要容器内有元素，`bool(a)`就是`True`，否则为`False`。
+实际上#quote[`if a`]调用了#quote[`bool(a)`]，即将`a`转换为布尔值后再进行的判断。只要容器内有元素，`bool(a)`就是`True`，否则为`False`。
 
 === 索引/下标
 
