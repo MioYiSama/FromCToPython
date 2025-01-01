@@ -14,7 +14,7 @@
 #show raw.where(block: true): set text(size: 10pt)
 #show raw.where(block: false): set text(size: 11pt)
 
-#set page(margin: 1cm)
+#set page(margin: 1cm, background: Watermark)
 #set heading(numbering: heading_numbering)
 #show table: set align(center)
 #set table.cell(breakable: false)
